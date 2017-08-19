@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+---
+layout: default
+title: Welcome
+---
 
-You can use the [editor on GitHub](https://github.com/tapple/tapple.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This site demonstrates a prototype mobile-friendly Jekyll *documentation* theme based on bootstrap. The site uses no plugins and can be (is) automatically built by Github's version of Jekyll.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Navigation is through a Table of Contents (TOC) sidebar, breadcrumb and navbar. The structure of these navigation elements is defined in data files, and can be automatically applied to articles based on their collection, parent folder, or in the page metadata. This allows multiple documentation sets to be built within a single site. The breadcrumb for the page is calculated from the TOC data structure.
 
-### Markdown
+The theme uses [bootstrap-sass](https://github.com/twbs/bootstrap-sass) (bootstrap-sass-official v3.2.0+2 from bower). This provides access to all the [standard bootstrap components](http://getbootstrap.com/components/) and means that the site appearance can be radically changed using the normal bootstrap variables.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Currently the project is a prototype; it is full of debug information and it lacks features that a real site might need (SEO integration, analytics, feedback mechanisms, search). Developers are welcome to extend or fork the project on [Github here](https://github.com/hamishwillee/jekyll-bootstrap-docsite/tree/gh-pages).
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+<div class="alert alert-success" role="alert"><p>This project borrows heavily from the <a href="https://sendgrid.com/docs/index.html">SendGrid Docs</a> theme, and uses the same CSS and JavaScript for the TOC. </p>
 
-- Bulleted
-- List
+<p>SendGrid a "real" documentation set for a commerical product, and is hence more complete and robust than this project. One of its nicest features is that it uses plugins to generate the TOC and Breadcrumbs based on the folder structure of the source code (this can be much easier for authors to manage than an explicit TOC). It also uses an asset pipeline, which can result in significantly compressed CSS and javascript, along with better management of dependencies (I have chosen not to use that approach in order to allow this project to be built using Github's Jekyll).</p>
+</div>
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tapple/tapple.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

@@ -1,4 +1,37 @@
-theme: jekyll-theme-merlot
-url: http://tavatar.org/wp
-name: Tavatar
-description: ""
+# Site settings
+title: Tavatar
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/jekyll-bootstrap-docsite" # the subpath of your site, e.g. /blog/
+url: http://tavatar.org # the base hostname & protocol for your site
+github_username:  tapple
+
+
+
+safe: true
+lsi: false
+
+
+# Build settings
+markdown: kramdown
+
+
+collections:
+  test_collection:
+    navmenu: navmenu_testcollection
+    output: true
+
+
+defaults:
+
+  - # Global default is use structures in /_data/toc.yml and /_data/navmenu.yml
+    scope:
+      path: ""
+
+    values:
+      toc: bigtoc
+      navmenu: navmenu
+
