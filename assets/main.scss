@@ -1,0 +1,26 @@
+---
+---
+@import "minima";
+
+.sidebar {
+    @media screen and (min-width: 1200px) {
+        position: fixed;
+        left: 0;
+    }
+	li {
+		border-top: 1px solid #eee;
+		background-color: #f8f8f8;
+        display: block;
+		.active {
+			background-color: azure;
+		}
+        a, div.subtree-name {
+            display: block;
+            padding: 6px 15px;
+            color: #777;
+        }
+        div.subtree-name {
+            font-weight: bold;
+        }
+	}
+}

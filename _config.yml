@@ -24,9 +24,29 @@ url: "https://tavatar.org" # the base hostname & protocol for your site, e.g. ht
 twitter_username: jekyllrb
 github_username:  tapple
 
+safe: true
+lsi: false
+
 # Build settings
 markdown: kramdown
 theme: minima
+
+
+collections:
+  test_collection:
+    navmenu: navmenu_testcollection
+    output: true
+
+
+defaults:
+
+  - # Global default is use structures in /_data/toc.yml and /_data/navmenu.yml
+    scope:
+      path: ""
+
+    values:
+      toc: bigtoc
+      navmenu: navmenu
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
